@@ -1,0 +1,101 @@
+ /* Personalização adicional do CSS pode ser adicionada aqui */
+    
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+     
+ }
+
+ 
+
+    .navbar-brand img{
+        width: 8rem;
+        
+    }
+    .navbar-collapse{
+        margin-left: 0rem;  
+        
+    }
+    
+    .navbar-collapse .nav-item{
+        margin-left: 3rem;
+        margin-left: 3rem;  
+        
+    }
+
+    .carousel img {
+        max-height: 800px; /* Defina a altura máxima desejada */
+        width: auto; /* Isso garantirá que a largura seja ajustada automaticamente */
+    }
+
+    .sobre{
+        margin-top: 3rem;
+    }
+
+    .sobre h5{
+        margin-bottom: 1rem;
+    }
+    .sobre h2{
+        margin-bottom: 3rem;
+    }
+    .sobre p{
+        margin-bottom: 3rem;
+    }
+
+
+    .formul{
+        margin: 0;
+        
+        padding: 8rem;
+    }
+
+    .formulario-container {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.confianca{
+    padding: 5rem 18rem 5rem 18rem;  
+}
+
+.confianca h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 22px;
+}
+
+.testimo{
+    
+    margin-bottom: 8rem;
+    height: 30rem;
+    
+}
+
+
+.rounded{
+    
+    height: 10rem !important;
+    border: 1px solid black;
+    border-radius: 20%;
+}
+
+
+
+.bg-gray{
+    background-color: aquamarine;
+}
+    
+
+.foot{
+    margin-bottom: 3rem;
+    background-color: aquamarine;
+    margin-bottom: 3rem;
+}
+
+    @media (max-width: 767px) {
+    .formul {
+        padding: 2rem;
+    }
+}
