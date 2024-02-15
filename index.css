@@ -65,6 +65,7 @@ html {
     .formul{
         margin: 0;
         
+        
         padding: 8rem;
     }
 
@@ -228,20 +229,37 @@ html {
 
     .formul {
         padding: 2rem;
+        margin-bottom: 3rem;
     }
      
+    .btn-lg{
+        margin-bottom: 3rem;
+    }
             .confianca{
-    padding: 0; 
-      
+    padding: 0;           
 }
+         .confianca i{
+    margin-top: 3rem;           
+}
+
+
+
 
 .testimo {
     
     padding: 0;
-    
+   
+}
+.testimo .carousel-control-next{
+    margin-right: 0rem;
+}
+.testimo .carousel-control-prev{
+    margin-left: 0rem;
 }
 
 .foot .offset-md-10{
     margin-left: 3rem;
 }
+
+
 }

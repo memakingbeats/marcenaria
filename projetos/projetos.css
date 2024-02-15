@@ -120,4 +120,14 @@
 .foot .offset-md-10{
     margin-left: 3rem;
 }
+
+.sessao {
+    height: 120rem;
+    
+}
+
+.sessao img {
+    margin-top: 2rem;
+    
+}
 }

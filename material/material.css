@@ -65,9 +65,16 @@
 
 .sessao {
                 
-                height: 90rem;
+                margin-top: 15rem;
             }
 
+.sessao h2{
+    margin-bottom: 3rem;
+}
+
+.sessao p{
+    margin-bottom: 3rem;
+}
 
 
     @media (max-width: 767px) {
