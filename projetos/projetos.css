@@ -1,0 +1,123 @@
+ /* Personalização adicional do CSS pode ser adicionada aqui */
+    
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+     
+ }
+
+ .no-padding-margin{
+    padding: 0 !important;
+ }
+
+ /* Estilo para as setas (arrows) do carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Defina a cor desejada para as setas */
+}
+
+ .fixed-top{
+    background-color: lightgrey;
+ }
+
+    .navbar-brand img{
+        width: 8rem;
+        
+    }
+    .navbar-collapse{
+        margin-left: 0rem;  
+        
+    }
+    
+    .navbar-collapse .nav-item{
+        margin-left: 3rem;
+        margin-left: 3rem;  
+        
+    }
+
+
+
+
+.sessao {
+    height: 50rem;
+    margin-top: 10rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    transition: transform 0.5s ease; /* Mais lento */
+}
+
+.zoom-icon:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.fullscreen-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 1.2s ease; /* Mais lento */
+}
+
+.fullscreen-image.show {
+    opacity: 1;
+}
+
+
+    
+
+
+.foot{
+    margin-bottom: 3rem;
+    
+    margin-bottom: 3rem;
+}
+
+.foot .btn-primary {
+    margin-bottom: 2rem;
+}
+
+
+.foot .social{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.foot .fa-instagram{
+    margin-right: 2rem;
+}
+
+
+
+
+
+
+
+
+
+    @media (max-width: 767px) {
+
+        
+
+.foot .offset-md-10{
+    margin-left: 3rem;
+}
+}

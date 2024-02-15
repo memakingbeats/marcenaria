@@ -1,14 +1,31 @@
- /* Personalização adicional do CSS pode ser adicionada aqui */
-    
+
+
  body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    
+    background-color: lightgrey;
      
  }
+  /* Personalização adicional do CSS pode ser adicionada aqui */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px; /* Adicione algum espaço entre o topo e a seção ao rolar */
+}
 
- 
+ .no-padding-margin{
+    padding: 0 !important;
+ }
+
+ /* Estilo para as setas (arrows) do carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Defina a cor desejada para as setas */
+}
+
+ .fixed-top{
+    background-color: lightgrey;
+ }
 
     .navbar-brand img{
         width: 8rem;
@@ -56,46 +73,175 @@
     margin-left: 0;
 }
 
+
+
+/* CSS para o formulário */
+        .form-container {
+            background-image: url('/Imagens/cozinha.jpg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        /* Estilo para o texto dentro do formulário */
+        .form-container h2,
+        .form-container label,
+        .form-container input,
+        .form-container textarea,
+        .form-container button {
+            color: white; /* Cor do texto branco */
+        }
+
+
+        /* CSS para o formulário */
+        .form-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .form-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.612); /* Cor preta com 50% de opacidade */
+            z-index: 1; /* Certifique-se de que o overlay fique abaixo do conteúdo do formulário */
+        }
+
+        .form-content {
+            position: relative;
+            z-index: 2; /* Certifique-se de que o conteúdo do formulário fique acima do overlay */
+            padding: 20px;
+            color: white; /* Cor do texto branco */
+        }
+
+        /* Estilo para o botão do formulário */
+        .btn-primary {
+            z-index: 2; /* Certifique-se de que o botão fique acima do overlay */
+        }
+
+
+
+
+
+
 .confianca{
-    padding: 5rem 18rem 5rem 18rem;  
+    padding: 5rem 18rem 5rem 18rem; 
+    background-color: whitesmoke; 
+    margin: 0 !important;
+    
 }
 
 .confianca h2{
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 22px;
 }
 
-.testimo{
-    
+
+
+
+
+
+.testimo {
     margin-bottom: 8rem;
-    height: 30rem;
+    padding: 5rem 15rem 5rem 15rem;
+    background-color: whitesmoke; 
+    width: 100vw; /* Definindo largura igual à largura da viewport */
+}
+
+
+
+.testimo h2{
     
+    font-size: 22px;
 }
-
-
-.rounded{
+.testimo h1{
     
-    height: 10rem !important;
-    border: 1px solid black;
-    border-radius: 20%;
+    font-size: 28px;
+}
+.testimo .carousel-control-next{
+    margin-right: -5rem;
+}
+.testimo .carousel-control-prev{
+    margin-left: -5rem;
 }
 
 
 
-.bg-gray{
-    background-color: aquamarine;
+/* Remova a altura fixa para permitir que a altura seja determinada pelo conteúdo */
+.testimo .carousel-inner {
+    height: auto !important;
 }
+
+
+
+
+
+
+
     
 
 .foot{
     margin-bottom: 3rem;
-    background-color: aquamarine;
+    
     margin-bottom: 3rem;
 }
 
+.foot .btn-primary {
+    margin-bottom: 2rem;
+}
+
+
+.foot .social{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.foot .fa-instagram{
+    margin-right: 2rem;
+}
+
+
+
+
+
+
     @media (max-width: 767px) {
+
+        .carousel img {
+        margin-top: 5rem;
+        height: 200px;
+    }
+    
+    .carousel .carousel-control-prev{
+        margin-top: 5rem;
+    }
+    .carousel .carousel-control-next{
+        margin-top: 5rem;
+    }
+
+
     .formul {
         padding: 2rem;
     }
+     
+            .confianca{
+    padding: 0; 
+      
+}
+
+.testimo {
+    
+    padding: 0;
+    
+}
+
+.foot .offset-md-10{
+    margin-left: 3rem;
+}
 }

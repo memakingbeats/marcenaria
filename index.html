@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Navbar e Carrossel</title>
+        <title>Arte & Designer</title>
         <!-- Adicione o link do Bootstrap CSS -->
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -22,7 +22,7 @@
     <body>
         <div class="container-fluid w-100 no-padding-margin">
             <!-- Container com 100% de largura e altura da tela -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container">
                     <a class="navbar-brand mr-auto" href="#">
                         <img src="/Imagens/logo.png" alt="Logo" />
@@ -41,16 +41,27 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre nós</a>
+                                <a class="nav-link" href="#bem-vindo"
+                                    >Sobre nós</a
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="/projetos/projetos.html"
+                                    >Nossos projetos</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nossos projetos</a>
+                                <a
+                                    class="nav-link"
+                                    href="/material/material.html"
+                                    >Material</a
+                                >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Material</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contato</a>
+                                <a class="nav-link" href="#contato">Contato</a>
                             </li>
                         </ul>
                         <div>
@@ -125,19 +136,19 @@
                     <span class="sr-only">Próximo</span>
                 </a>
             </div>
-
-            <div class="row mt-5 formul">
+            <div id="bem-vindo" class="row mt-5 formul">
                 <div class="col-lg-4 mx-auto sobre">
-                    <h5>BEM-VINDO À LAILA PLANEJADOS</h5>
+                    <h5>BEM-VINDO À ARTE & DESIGNER</h5>
                     <h2>TRANSFORMANDO SONHOS EM REALIDADE</h2>
                     <p>
-                        Na SOB MEDIDA, acreditamos que a sua casa é o reflexo da
-                        sua personalidade e estilo de vida. Somos uma empresa
-                        especializada em criar móveis planejados sob medida, que
-                        se encaixam perfeitamente nas suas necessidades e tornam
-                        cada ambiente único e funcional. Desde a sala de estar
-                        até a cozinha, do quarto ao escritório, estamos aqui
-                        para transformar seus sonhos em realidade.
+                        Na Arte & Designer, acreditamos que a sua casa é o
+                        reflexo da sua personalidade e estilo de vida. Somos uma
+                        empresa especializada em criar móveis planejados sob
+                        medida, que se encaixam perfeitamente nas suas
+                        necessidades e tornam cada ambiente único e funcional.
+                        Desde a sala de estar até a cozinha, do quarto ao
+                        escritório, estamos aqui para transformar seus sonhos em
+                        realidade.
                     </p>
                     <div class="mt-4">
                         <a
@@ -148,68 +159,61 @@
                         >
                     </div>
                 </div>
-                <div
-                    class="col-lg-6 mx-auto p-4 rounded"
-                    style="background-color: rgba(0, 0, 0, 0.5)"
-                >
-                    <h2 class="text-white">Nos fale sobre seu projeto!!</h2>
-                    <form
-                        action="https://formspree.io/f/xayrekyo"
-                        method="POST"
-                    >
-                        <div class="form-group">
-                            <label for="nome" class="text-white">Nome:</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="nome"
-                                name="nome"
-                                placeholder="Digite seu nome"
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="text-white"
-                                >E-mail:</label
-                            >
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="email"
-                                name="email"
-                                placeholder="Digite seu e-mail"
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone" class="text-white"
-                                >Telefone/WhatsApp:</label
-                            >
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="telefone"
-                                name="telefone"
-                                placeholder="Digite seu telefone/WhatsApp"
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem" class="text-white"
-                                >Mensagem:</label
-                            >
-                            <textarea
-                                class="form-control"
-                                id="mensagem"
-                                name="message"
-                                rows="5"
-                                placeholder="Digite sua mensagem"
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Enviar
-                        </button>
-                    </form>
+                <div class="col-lg-6 mx-auto p-4 form-container">
+                    <div class="form-content">
+                        <h2>Nos fale sobre seu projeto!!</h2>
+                        <form
+                            id="bem-vindo-formulario"
+                            action="https://formspree.io/f/xayrekyo"
+                            method="POST"
+                        >
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Digite seu nome"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Digite seu e-mail"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone/WhatsApp:</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="telefone"
+                                    name="telefone"
+                                    placeholder="Digite seu telefone/WhatsApp"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea
+                                    class="form-control"
+                                    id="mensagem"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Digite sua mensagem"
+                                ></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-
             <div class="row mt-5 confianca">
                 <div class="col-md-4">
                     <div class="text-center">
@@ -242,9 +246,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="container mt-5 testimo">
-                <h2 class="text-center">Quem Compra, Confia</h2>
+            <div class="container-fluid testimo">
+                <h1 class="text-center">QUEM COMPRA, CONFIA!!</h1>
                 <div
                     id="testimonial-carousel"
                     class="carousel slide"
@@ -253,25 +256,46 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-md-4 card">
+                                <div class="col-md-4">
                                     <div class="text-center p-5">
-                                        <i class="fab fa-google fa-3x mb-3"></i>
-                                        <h4>Nome da Pessoa 1</h4>
-                                        <p>Depoimento da pessoa 1.</p>
+                                        <i class="fab fa-google mb-3"></i>
+                                        <h2>JOÃO SILVA</h2>
+                                        <p>
+                                            A experiência com a Arte & Designer
+                                            foi excepcional! Ele criou móveis
+                                            sob medida para minha casa, e cada
+                                            peça superou minhas expectativas.
+                                            Profissionalismo, qualidade e
+                                            atenção aos detalhes. Recomendo
+                                            totalmente!
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center p-5">
-                                        <i class="fab fa-google fa-3x mb-3"></i>
-                                        <h4>Nome da Pessoa 2</h4>
-                                        <p>Depoimento da pessoa 2.</p>
+                                        <i class="fab fa-google mb-3"></i>
+                                        <h2>MARIA SOUZA</h2>
+                                        <p>
+                                            Contratei a Arte & Designer para
+                                            renovar os armários da minha
+                                            cozinha, e estou extremamente
+                                            satisfeito com o resultado! Sem
+                                            dúvida, uma escolha excelente!
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center p-5">
-                                        <i class="fab fa-google fa-3x mb-3"></i>
-                                        <h4>Nome da Pessoa 3</h4>
-                                        <p>Depoimento da pessoa 3.</p>
+                                        <i class="fab fa-google mb-3"></i>
+                                        <h2>CARLOS OLIVEIRA</h2>
+                                        <p>
+                                            Não poderia estar mais feliz com a
+                                            Arte & Designer! Ele projetou e
+                                            instalou um closet sob medida no meu
+                                            quarto, e o resultado final é
+                                            simplesmente deslumbrante. Recomendo
+                                            de olhos fechados!"
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -281,23 +305,44 @@
                                 <!-- Adicione aqui os próximos três depoimentos -->
                                 <div class="col-md-4">
                                     <div class="text-center p-5">
-                                        <i class="fab fa-google fa-3x mb-3"></i>
-                                        <h4>Nome da Pessoa 4</h4>
-                                        <p>Depoimento da pessoa 4.</p>
+                                        <i class="fab fa-google mb-3"></i>
+                                        <h2>ANA PEREIRA</h2>
+                                        <p>
+                                            Excelente serviço de marcenaria
+                                            prestado pela Arte & Designer! Ele
+                                            criou uma estante personalizada para
+                                            minha sala de estar, e o resultado é
+                                            impressionante. Sem dúvida, uma
+                                            escolha acertada!
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center p-5">
-                                        <i class="fab fa-google fa-3x mb-3"></i>
-                                        <h4>Nome da Pessoa 5</h4>
-                                        <p>Depoimento da pessoa 5.</p>
+                                        <i class="fab fa-google mb-3"></i>
+                                        <h2>PEDRO SANTOS</h2>
+                                        <p>
+                                            Minha experiência com a Arte &
+                                            Designer foi simplesmente
+                                            fantástica! Ela projetou e fabricou
+                                            uma mesa de jantar exclusiva para
+                                            minha família, e estamos encantados
+                                            com o resultado.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="text-center p-5">
-                                        <i class="fab fa-google fa-3x mb-3"></i>
-                                        <h4>Nome da Pessoa 6</h4>
-                                        <p>Depoimento da pessoa 6.</p>
+                                        <i class="fab fa-google mb-3"></i>
+                                        <h2>LUCIA FERREIRA</h2>
+                                        <p>
+                                            Contratei a Arte & Designer para
+                                            reformar os móveis antigos da minha
+                                            casa, e estou extremamente
+                                            satisfeita com o resultado!
+                                            Qualidade e criatividade na
+                                            marcenaria!
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -331,22 +376,24 @@
                     </a>
                 </div>
             </div>
-            <footer class="mt-5">
+            <footer id="contato" class="mt-5">
                 <div class="container foot">
                     <div class="row">
                         <div class="col-md-6">
                             <h4>NÃO PERCA TEMPO!</h4>
                             <h5>FALE COM UM ESPECIALISTA HOJE MESMO!</h5>
-                            <a href="#" class="btn btn-primary mt-3"
+                            <a
+                                href="#bem-vindo-formulario"
+                                class="btn btn-primary mt-3"
                                 >Faça seu orçamento</a
                             >
                             <div>
                                 <span class="whatsapp">
                                     <i class="fab fa-whatsapp"></i>
                                     <a
-                                        href="https://api.whatsapp.com/send?phone=seunumerodetelefone"
+                                        href="https://wa.me/5548984425291"
                                         target="_blank"
-                                        >(XX) XXXX-XXXX</a
+                                        >(48)98442-5291</a
                                     >
                                 </span>
                             </div>
@@ -356,19 +403,23 @@
                                     <a
                                         href="https://maps.google.com/"
                                         target="_blank"
-                                        >Av. Washington Luís, 3281 Loja 3 -
-                                        Santo Amaro, São Paulo - SP CEP
-                                        04626-000 Facebook Instagram
+                                        >Rua Ana Antônia Martins, 30 - Ribeirão
+                                        da Ilha, Florianópolis - SC CEP
+                                        88064-400
                                     </a>
                                 </span>
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 social">
                                 <span class="social-media">
+                                    <a
+                                        href="https://www.instagram.com/arteedesignoficial2023?igsh=MTUyeWplZHRzYW44Nw%3D%3D&utm_source=qr"
+                                        target="_blank"
+                                    >
+                                        <i class="fab fa-instagram fa-3x"></i>
+                                    </a>
+
                                     <a href="#"
-                                        ><i class="fab fa-instagram"></i
-                                    ></a>
-                                    <a href="#"
-                                        ><i class="fab fa-facebook"></i
+                                        ><i class="fab fa-facebook fa-3x"></i
                                     ></a>
                                 </span>
                             </div>
@@ -378,7 +429,9 @@
                                 <!-- Substitua este comentário pelo código de incorporação -->
                                 <!-- Exemplo: <iframe src="código_de_incorporação"></iframe> -->
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31048.60383483224!2d-122.41941561939729!3d37.774929593463924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1644365827601!5m2!1sen!2sus"
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d0.001!2d-48.53329095016872!3d-27.70665378800194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1644377768089!5m2!1sen!2sus
+
+"
                                     style="border: 0"
                                     allowfullscreen=""
                                     loading="lazy"
@@ -458,6 +511,50 @@
                 </div>
             </footer>
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Select the "Sobre nós" link
+                var sobreNosLink = document.querySelector(
+                    'a[href="#bem-vindo"]'
+                );
+                // Select the "Contato" link
+                var contatoLink = document.querySelector('a[href="#contato"]');
+                // Select the "Faça seu orçamento" button
+                var orcamentoButton = document.querySelector(
+                    'a[href="#bem-vindo-formulario"]'
+                );
+
+                // Function to handle scrolling
+                function scrollToElement(targetElementId) {
+                    var targetElement =
+                        document.getElementById(targetElementId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                            inline: "nearest",
+                            scrollMarginTop: 200,
+                        });
+                    }
+                }
+
+                // Add click event listeners to the links and button
+                sobreNosLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToElement("bem-vindo"); // Scroll to "BEM-VINDO À ARTE & DESIGNER" section
+                });
+
+                contatoLink.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToElement("contato"); // Scroll to "Contato" section
+                });
+
+                orcamentoButton.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    scrollToElement("bem-vindo-formulario"); // Scroll to form next to "BEM-VINDO À ARTE & DESIGNER" section
+                });
+            });
+        </script>
 
         <!-- Adicione o link do jQuery e do Bootstrap JS no final do corpo para garantir que o JavaScript funcione corretamente -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

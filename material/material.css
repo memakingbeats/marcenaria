@@ -1,0 +1,80 @@
+ /* Personalização adicional do CSS pode ser adicionada aqui */
+    
+ body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgrey;
+     
+ }
+
+ .no-padding-margin{
+    padding: 0 !important;
+ }
+
+ /* Estilo para as setas (arrows) do carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); /* Defina a cor desejada para as setas */
+}
+
+ .fixed-top{
+    background-color: lightgrey;
+ }
+
+    .navbar-brand img{
+        width: 8rem;
+        
+    }
+    .navbar-collapse{
+        margin-left: 0rem;  
+        
+    }
+    
+    .navbar-collapse .nav-item{
+        margin-left: 3rem;
+        margin-left: 3rem;  
+        
+    }
+
+    
+
+
+
+
+    .foot{
+    margin-bottom: 3rem;
+    
+    margin-bottom: 3rem;
+}
+
+.foot .btn-primary {
+    margin-bottom: 2rem;
+}
+
+
+.foot .social{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.foot .fa-instagram{
+    margin-right: 2rem;
+}
+
+
+.sessao {
+                
+                height: 90rem;
+            }
+
+
+
+    @media (max-width: 767px) {
+
+        
+
+.foot .offset-md-10{
+    margin-left: 3rem;
+}
+}
