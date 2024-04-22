@@ -1,195 +1,182 @@
-
-
- body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: lightgrey;
-     
- }
-  /* Personalização adicional do CSS pode ser adicionada aqui */
+}
+/* Personalização adicional do CSS pode ser adicionada aqui */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px; /* Adicione algum espaço entre o topo e a seção ao rolar */
 }
 
- .no-padding-margin{
+.no-padding-margin {
     padding: 0 !important;
- }
+}
+.logo a img {
+    width: 200px;
+}
 
- /* Estilo para as setas (arrows) do carousel */
+.navbar-nav .nav-link {
+    background-image: linear-gradient(to right, gold, darkgoldenrod);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.nav-link,
+.whatsapp-link {
+    background-image: linear-gradient(to right, gold, darkgoldenrod);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.whatsapp-link:hover {
+    color: gold;
+}
+
+/* Estilo para as setas (arrows) do carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(100%); /* Defina a cor desejada para as setas */
 }
 
- .fixed-top{
+.fixed-top {
     background-color: lightgrey;
- }
+}
 
-    .navbar-brand img{
-        width: 8rem;
-        
-    }
-    .navbar-collapse{
-        margin-left: 0rem;  
-        
-    }
-    
-    .navbar-collapse .nav-item{
-        margin-left: 3rem;
-        margin-left: 3rem;  
-        
-    }
+.navbar-brand img {
+    width: 8rem;
+}
+.navbar-collapse {
+    margin-left: 0rem;
+}
 
-    .carousel img {
-        max-height: 800px; /* Defina a altura máxima desejada */
-        width: auto; /* Isso garantirá que a largura seja ajustada automaticamente */
-    }
+.navbar-collapse .nav-item {
+    margin-left: 3rem;
+    margin-left: 3rem;
+}
 
-    .sobre{
-        margin-top: 3rem;
-    }
+.carousel img {
+    max-height: 800px; /* Defina a altura máxima desejada */
+    width: auto; /* Isso garantirá que a largura seja ajustada automaticamente */
+}
 
-    .sobre h5{
-        margin-bottom: 1rem;
-    }
-    .sobre h2{
-        margin-bottom: 3rem;
-    }
-    .sobre p{
-        margin-bottom: 3rem;
-    }
+.sobre {
+    margin-top: 3rem;
+}
 
+.sobre h5 {
+    margin-bottom: 1rem;
+}
+.sobre h2 {
+    margin-bottom: 3rem;
+}
+.sobre p {
+    margin-bottom: 3rem;
+}
 
-    .formul{
-        margin: 0;
-        
-        
-        padding: 8rem;
-    }
+.formul {
+    margin: 0;
 
-    .formulario-container {
+    padding: 8rem;
+}
+
+.formulario-container {
     margin-right: 0;
     margin-left: 0;
 }
 
-
-
 /* CSS para o formulário */
-        .form-container {
-            background-image: url('/Imagens/cozinha.jpg'); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        
-        /* Estilo para o texto dentro do formulário */
-        .form-container h2,
-        .form-container label,
-        .form-container input,
-        .form-container textarea,
-        .form-container button {
-            color: white; /* Cor do texto branco */
-        }
-
-
-        /* CSS para o formulário */
-        .form-container {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .form-container::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.612); /* Cor preta com 50% de opacidade */
-            z-index: 1; /* Certifique-se de que o overlay fique abaixo do conteúdo do formulário */
-        }
-
-        .form-content {
-            position: relative;
-            z-index: 2; /* Certifique-se de que o conteúdo do formulário fique acima do overlay */
-            padding: 20px;
-            color: white; /* Cor do texto branco */
-        }
-
-        /* Estilo para o botão do formulário */
-        .btn-primary {
-            z-index: 2; /* Certifique-se de que o botão fique acima do overlay */
-        }
-
-
-
-
-
-
-.confianca{
-    padding: 5rem 18rem 5rem 18rem; 
-    background-color: whitesmoke; 
-    margin: 0 !important;
-    
+.form-container {
+    background-image: url("/Imagens/cozinha.jpg"); /* Substitua 'sua_imagem.jpg' pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.confianca h2{
+/* Estilo para o texto dentro do formulário */
+.form-container h2,
+.form-container label,
+.form-container input,
+.form-container textarea,
+.form-container button {
+    color: white; /* Cor do texto branco */
+}
+
+/* CSS para o formulário */
+.form-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.612); /* Cor preta com 50% de opacidade */
+    z-index: 1; /* Certifique-se de que o overlay fique abaixo do conteúdo do formulário */
+}
+
+.form-content {
+    position: relative;
+    z-index: 2; /* Certifique-se de que o conteúdo do formulário fique acima do overlay */
+    padding: 20px;
+    color: white; /* Cor do texto branco */
+}
+
+/* Estilo para o botão do formulário */
+.btn-primary {
+    z-index: 2; /* Certifique-se de que o botão fique acima do overlay */
+}
+
+.confianca {
+    padding: 5rem 18rem 5rem 18rem;
+    background-color: whitesmoke;
+    margin: 0 !important;
+}
+
+.confianca h2 {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 22px;
 }
 
-
-
-
-
-
 .testimo {
     margin-bottom: 8rem;
     padding: 5rem 15rem 5rem 15rem;
-    background-color: whitesmoke; 
+    background-color: whitesmoke;
     width: 100vw; /* Definindo largura igual à largura da viewport */
 }
 
-
-
-.testimo h2{
-    
+.testimo h2 {
     font-size: 22px;
 }
-.testimo h1{
-    
+.testimo h1 {
     font-size: 28px;
 }
-.testimo .carousel-control-next{
+.testimo .carousel-control-next {
     margin-right: -5rem;
 }
-.testimo .carousel-control-prev{
+.testimo .carousel-control-prev {
     margin-left: -5rem;
 }
-
-
 
 /* Remova a altura fixa para permitir que a altura seja determinada pelo conteúdo */
 .testimo .carousel-inner {
     height: auto !important;
 }
 
-
-
-
-
-
-
-    
-
-.foot{
+.foot {
     margin-bottom: 3rem;
-    
+
     margin-bottom: 3rem;
 }
 
@@ -197,69 +184,54 @@ html {
     margin-bottom: 2rem;
 }
 
-
-.foot .social{
+.foot .social {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.foot .fa-instagram{
+.foot .fa-instagram {
     margin-right: 2rem;
 }
 
-
-
-
-
-
-    @media (max-width: 767px) {
-
-        .carousel img {
+@media (max-width: 767px) {
+    .carousel img {
         margin-top: 5rem;
         height: 200px;
     }
-    
-    .carousel .carousel-control-prev{
-        margin-top: 5rem;
-    }
-    .carousel .carousel-control-next{
-        margin-top: 5rem;
-    }
 
+    .carousel .carousel-control-prev {
+        margin-top: 5rem;
+    }
+    .carousel .carousel-control-next {
+        margin-top: 5rem;
+    }
 
     .formul {
         padding: 2rem;
         margin-bottom: 3rem;
     }
-     
-    .btn-lg{
+
+    .btn-lg {
         margin-bottom: 3rem;
     }
-            .confianca{
-    padding: 0;           
-}
-         .confianca i{
-    margin-top: 3rem;           
-}
+    .confianca {
+        padding: 0;
+    }
+    .confianca i {
+        margin-top: 3rem;
+    }
 
+    .testimo {
+        padding: 0;
+    }
+    .testimo .carousel-control-next {
+        margin-right: 0rem;
+    }
+    .testimo .carousel-control-prev {
+        margin-left: 0rem;
+    }
 
-
-
-.testimo {
-    
-    padding: 0;
-   
-}
-.testimo .carousel-control-next{
-    margin-right: 0rem;
-}
-.testimo .carousel-control-prev{
-    margin-left: 0rem;
-}
-
-.foot .offset-md-10{
-    margin-left: 3rem;
-}
-
-
+    .foot .offset-md-10 {
+        margin-left: 3rem;
+    }
 }
