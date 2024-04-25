@@ -17,6 +17,13 @@ html {
     width: 200px;
 }
 
+.logo i {
+    background-image: linear-gradient(to right, gold, darkgoldenrod);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
 .navbar-nav .nav-link {
     background-image: linear-gradient(to right, gold, darkgoldenrod);
     -webkit-background-clip: text;
@@ -154,6 +161,7 @@ html {
     padding: 5rem 15rem 5rem 15rem;
     background-color: whitesmoke;
     width: 100vw; /* Definindo largura igual à largura da viewport */
+    display: none;
 }
 
 .testimo h2 {
@@ -195,15 +203,15 @@ html {
 
 @media (max-width: 767px) {
     .carousel img {
-        margin-top: 5rem;
+        margin-top: 12rem;
         height: 200px;
     }
 
     .carousel .carousel-control-prev {
-        margin-top: 5rem;
+        margin-top: 12rem;
     }
     .carousel .carousel-control-next {
-        margin-top: 5rem;
+        margin-top: 12rem;
     }
 
     .formul {
